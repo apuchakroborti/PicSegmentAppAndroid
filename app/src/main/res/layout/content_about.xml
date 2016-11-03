@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apu.picseg.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0B0B0"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#000080"
+            android:layout_height="wrap_content"
+            android:text="Software and Engineering Project"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#008000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Visualization of Segmentation \nof a Picture Application "
+            android:id="@+id/VisualTextView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gropu No:02"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#008000"
+            android:text="Group Members:\nApu Kumar Chakroborti\nMd Tariqul Islam\nNafis Sazid\nBishal Dey"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:text="Description:\nThis application is able to take a new picture by camera,can select image from sd card ,can segment picture,can save the segmented picture and show the all picture in a grid view. "
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</RelativeLayout>

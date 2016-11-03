@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apu.picseg.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/mainLinearLayout"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+
+            android:textColor="#0000A0"
+            android:text="Gallery"
+            android:onClick="ShowImage"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/gallery"
+            android:layout_gravity="center_horizontal"
+
+
+
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+
+            android:layout_weight="0.22" />
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:layout_marginTop="50dp"
+
+            android:textStyle="bold"
+            android:textColor="#0000A0"
+            android:text="Segmentation"
+            android:onClick="goSecondActivity"
+            android:id="@+id/segmentation"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            android:layout_weight="0.22" />
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#0000A0"
+            android:text="About"
+            android:id="@+id/about"
+            android:onClick="goToAbout"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+
+            android:layout_weight="0.22" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
